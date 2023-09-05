@@ -1,0 +1,16 @@
+/* Write your CSS here */
+.login-app-bg-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card-container {
+  background-image: linear-gradient(to bottom, #2b2c49, #b5b9ff);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
