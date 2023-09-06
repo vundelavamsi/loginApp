@@ -28,9 +28,11 @@ class Home extends Component {
           ) : (
             <Message message="Please Login" />
           )}
-          <button type="button" onClick={this.onStatus}>
-            {isLoggedIn ? <Logout /> : <Login />}
-          </button>
+          {isLoggedIn ? (
+            <Logout logoutClick={this.onStatus} />
+          ) : (
+            <Login loginClick={this.onStatus} />
+          )}
         </div>
       </div>
     )

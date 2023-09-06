@@ -1,4 +1,11 @@
 // Write your code here
-const Logout = () => <button type="button">Logout</button>
+const Logout = props => {
+  const {logoutClick} = props
+  return (
+    <button type="button" onClick={logoutClick}>
+      Logout
+    </button>
+  )
+}
 
 export default Logout
